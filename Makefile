@@ -1,5 +1,5 @@
 SRCS			= $(shell find src -type f -name "*.c")
-OBJS			= $(SRCS:src/%.c=src/bin/%.o)
+OBJS			= $(SRCS:src/%.c=bin/%.o)
 ROOT			= $(shell echo $(HOME))
 
 
@@ -11,7 +11,7 @@ LDFLAGS			= -L./libs/readline/lib -lreadline
 LIBFT			= ./libs/libft/libft.a
 INC_FT			= ./libs/libft
 INC				= ./inc/
-BIN				= ./src/bin/
+BIN				= ./bin/
 LIB				= ./libs/.minishell
 
 
